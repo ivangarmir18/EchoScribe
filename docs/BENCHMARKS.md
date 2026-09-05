@@ -1,4 +1,4 @@
-# 📊 EchoScribe Official Benchmark Report
+# EchoScribe Official Benchmark Report
 
 > **Comprehensive Performance, Latency, Word Error Rate (WER), and Cost Analysis**  
 > **Hardware Evaluated:** NVIDIA L4 24GB (Serverless Modal Cloud) vs Intel Core i7-12700H (Local CPU) vs NVIDIA RTX 3070 8GB (Local GPU) vs Commercial SaaS.

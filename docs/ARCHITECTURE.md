@@ -1,4 +1,4 @@
-# 🏗️ EchoScribe Architecture & Technical Whitepaper
+# EchoScribe Architecture & Technical Whitepaper
 
 > **Document Version:** 1.3.2  
 > **Author:** Iván García Miranda  

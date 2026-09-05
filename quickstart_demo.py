@@ -183,7 +183,7 @@ def split_into_smart_cues(text: str, start_time: float, end_time: float, profile
 
 def main():
     print("=" * 78)
-    print(" 🎙️  EchoScribe Algorithmic Demonstration")
+    print("    EchoScribe Algorithmic Engine")
     print("    Fast Whisper Ingestion & Smart SRT Formatting Engine")
     print("    Official Website: https://www.echoscribe.es")
     print("=" * 78)
@@ -198,7 +198,7 @@ def main():
         "Subscribe to the channel. Subscribe to the channel. Subscribe to the channel."
     )
 
-    print("▶ [INPUT] Raw Corrupted Whisper Output (Contains repetitive hallucinations):")
+    print("[INPUT] Raw Corrupted Whisper Output (Contains repetitive hallucinations):")
     print("-" * 78)
     print(f'"{raw_whisper_hallucination}"')
     print("-" * 78)
@@ -206,7 +206,7 @@ def main():
 
     # Step 1: Run Anti-Hallucination Filter
     cleaned_text = clean_hallucination_loops(raw_whisper_hallucination)
-    print("✔ [STEP 1] Anti-Hallucination Guardrail Applied:")
+    print("[OK] [STEP 1] Anti-Hallucination Guardrail Applied:")
     print("-" * 78)
     print(f'"{cleaned_text}"')
     print("-" * 78)
@@ -214,16 +214,16 @@ def main():
 
     # Step 2: Compare Smart Subtitle Profiles
     audio_duration = 14.5  # seconds
-    print("✔ [STEP 2] Generating Smart Subtitle Cues across Different Ergonomic Profiles:")
+    print("[OK] [STEP 2] Generating Smart Subtitle Cues across Different Ergonomic Profiles:")
     print()
 
     for profile_key in ["short", "medium", "long"]:
         profile_info = SUBTITLE_PROFILES[profile_key]
         cues = split_into_smart_cues(cleaned_text, start_time=0.0, end_time=audio_duration, profile_key=profile_key)
 
-        print(f"  ── Profile: {profile_info['name'].upper()} ({profile_info['min_chars']}-{profile_info['max_chars']} chars/cue) ──")
+        print(f"  -- Profile: {profile_info['name'].upper()} ({profile_info['min_chars']}-{profile_info['max_chars']} chars/cue) --")
         for cue in cues:
-            orphan_marker = " ⚠️ ORPHAN!" if len(cue["text"].split()) < profile_info["min_words"] else ""
+            orphan_marker = " [ORPHAN]" if len(cue["text"].split()) < profile_info["min_words"] else ""
             print(f"    [{cue['start_fmt']} --> {cue['end_fmt']}]  {cue['text']} ({len(cue['text'])} chars){orphan_marker}")
         print()
 
@@ -234,10 +234,10 @@ def main():
         for c in medium_cues:
             f.write(f"{c['index']}\n{c['start_fmt']} --> {c['end_fmt']}\n{c['text']}\n\n")
 
-    print(f"✔ [STEP 3] Successfully exported sample subtitle to '{demo_srt_filename}'!")
+    print(f"[OK] [STEP 3] Successfully exported sample subtitle to '{demo_srt_filename}'")
     print()
     print("=" * 78)
-    print(" 🎉 Demo finished successfully!")
+    print(" [SUCCESS] Demo executed successfully.")
     print("    To run the full Windows desktop application or try cloud transcription,")
     print("    download EchoScribe at: https://www.echoscribe.es")
     print("=" * 78)

@@ -1,15 +1,15 @@
-# 🔒 Security Policy
+# Security Policy
 
-## 🛡️ Supported Versions
+## Supported Versions
 
-| Version | Supported |
+| Version | Status |
 | :--- | :--- |
-| **1.3.x** | ✅ Active security support |
-| < 1.3.0 | ❌ End of life |
+| **1.3.x** | [x] Active security support |
+| < 1.3.0 | [-] End of life |
 
 ---
 
-## 🔐 Reporting a Vulnerability
+## Reporting a Vulnerability
 
 Security and user privacy are fundamental to EchoScribe:
 - In **Local Mode**, no audio data, tokens, or personal identifiers ever leave the user's host operating system.
@@ -18,7 +18,7 @@ Security and user privacy are fundamental to EchoScribe:
 If you discover a security vulnerability or credential leak within EchoScribe, please **DO NOT open a public issue**.
 
 Instead, send a responsible disclosure email to:
-📧 **seguridad@echoscribe.es** or **contacto@echoscribe.es**
+- **seguridad@echoscribe.es** or **contacto@echoscribe.es**
 
 Please include:
 1. Description of the vulnerability.
@@ -26,4 +26,3 @@ Please include:
 3. Potential impact.
 
 We will review and acknowledge your report within 48 hours and work with you to release a patch promptly.
-

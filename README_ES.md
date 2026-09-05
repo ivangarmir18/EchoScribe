@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎙️ EchoScribe (Español)
+# EchoScribe (Español)
 
 ### **Herramienta de Escritorio para Windows: Ingesta Rápida con Whisper y Formateo Inteligente de Subtítulos SRT**
 *Plataforma de voz a texto de alto rendimiento con aceleración GPU Serverless (NVIDIA L4 24GB), cortafuegos anti-alucinaciones, cascada de traducción con DeepSeek + Gemini y ergonomía semántica de subtítulos.*
@@ -11,7 +11,7 @@
 [![GitHub release](https://img.shields.io/github/v/release/ivangarmir18/EchoScribe?style=for-the-badge&color=blue)](https://github.com/ivangarmir18/EchoScribe/releases)
 [![Python Version](https://img.shields.io/badge/Python-3.10%20%7C%203.11-3776ab?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![Licencia: MIT](https://img.shields.io/badge/Licencia-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Motor GPU](https://img.shields.io/badge/GPU_Nube-NVIDIA_L4_24GB-76b900?style=for-the-badge&logo=nvidia&logoColor=white)](#-benchmarks-y-velocidad-real-time-factor-rtf)
+[![Motor GPU](https://img.shields.io/badge/GPU_Nube-NVIDIA_L4_24GB-76b900?style=for-the-badge&logo=nvidia&logoColor=white)](#benchmarks-y-velocidad-real-time-factor-rtf)
 
 <br/>
 
@@ -25,21 +25,21 @@
 
 ---
 
-## 📌 Estructura del Repositorio y Modelo de Distribución
+## Estructura del Repositorio y Modelo de Distribución
 
 > [!NOTE]
 > **Núcleo Algorítmico Open-Source + Aplicación de Escritorio Compilada:**  
 > Este repositorio contiene el núcleo algorítmico de código abierto de EchoScribe (`quickstart_demo.py`): el limpiador de bucles de alucinación en 4 etapas y el particionador semántico elástico de subtítulos con prevención de palabras huérfanas.  
 > 
 > La aplicación de escritorio completa para Windows (con interfaz nativa Microsoft Edge WebView2, recortador interactivo de audio, descargador directo de YouTube a 4K / MP3 320kbps y conexión al clúster de GPUs en la nube) se distribuye compilada como instalador listo para usar:
-> - 📥 **Descargar instalador de Windows (`EchoScribe_Setup.exe`):** [Web Oficial](https://www.echoscribe.es) | [Releases de GitHub](https://github.com/ivangarmir18/EchoScribe/releases)
-> - 🛡️ **Informe de Análisis en VirusTotal:** [Verificar Detección Limpia (Hash: ec0517c1...)](https://www.virustotal.com/gui/file/ec0517c1cc365f2dfb43d8715e7aaaa3b8cf6583c63ef8b121f6107fc163f55d/detection)
+> - **Descargar instalador de Windows (`EchoScribe_Setup.exe`):** [Web Oficial](https://www.echoscribe.es) | [Releases de GitHub](https://github.com/ivangarmir18/EchoScribe/releases)
+> - **Informe de Análisis en VirusTotal:** [Verificar Detección Limpia (Hash: ec0517c1...)](https://www.virustotal.com/gui/file/ec0517c1cc365f2dfb43d8715e7aaaa3b8cf6583c63ef8b121f6107fc163f55d/detection)
 > 
 > *Nota de seguridad sobre análisis heurísticos:* Al igual que ocurre con aplicaciones empaquetadas con Inno Setup / PyInstaller que integran auto-actualización en segundo plano (comprobación remota de `version.json` y actualización de extractores `yt-dlp`), motores heurísticos secundarios como Gridinsoft o Zillya pueden emitir una alerta genérica no concluyente. Todos los motores de referencia de la industria (Microsoft Defender, Kaspersky, Bitdefender, Google Safe Browsing, Sophos, Avast, ESET) verifican el instalador como 100% seguro y libre de malware.
 
 ---
 
-## ⚡ El Problema Real de Whisper en Producción
+## El Problema Real de Whisper en Producción
 
 Cualquier estudiante, investigador, creador de contenido o editor de vídeo que haya intentado usar OpenAI Whisper "en bruto" se topa con tres limitaciones críticas:
 
@@ -81,7 +81,7 @@ Cualquier estudiante, investigador, creador de contenido o editor de vídeo que 
 
 ---
 
-## 🏛️ Arquitectura del Sistema
+## Arquitectura del Sistema
 
 ```mermaid
 flowchart TD
@@ -122,33 +122,33 @@ flowchart TD
 
 ---
 
-## 🚀 Funcionalidades Clave
+## Funcionalidades Clave
 
-### 🎬 1. Formateo Inteligente de Subtítulos (Prevención de Huérfanas)
+### 1. Formateo Inteligente de Subtítulos (Prevención de Huérfanas)
 Los sistemas tradicionales parten texto a los 40 caracteres, dejando preposiciones o artículos colgados. EchoScribe aplica **Ventanas Semánticas Proporcionales**:
 - **Perfil Corto (TikTok / Reels / Shorts)**: 15–26 caracteres, máx. 8 palabras, máx. 3.5s por subtítulo. Ritmo rápido para captar la atención en vídeo vertical.
 - **Perfil Medio (YouTube / Ensayos)**: 27–40 caracteres, máx. 12 palabras, máx. 4.5s. Lectura fluida según patrones naturales del habla.
 - **Perfil Largo (Cine / Conferencias / TFG)**: 40–55 caracteres, máx. 16 palabras, máx. 5.5s. Cumple los estándares de emisión de la BBC y Netflix.
 - **Subtítulos Bilingües Simultáneos**: Genera subtítulos duales donde cada bloque contiene el idioma original y su traducción perfectamente alineados.
 
-### 🛡️ 2. Cortafuegos de Alucinaciones Whisper
+### 2. Cortafuegos de Alucinaciones Whisper
 1. **Silero VAD previo a la inferencia**: Descarta los fragmentos mudos o con música pura antes de que entren a Whisper.
 2. **Penalización de repetición (1.15) y filtro no-speech (0.85)**: Desalienta los atractores cíclicos.
 3. **Limpiador regex de bucles**: Detecta y colapsa secuencias de palabras repetidas.
 4. **Deduplicador de cues**: Fusiona bloques de subtítulos idénticos generados por eco acústico.
 
-### 🧠 3. Post-Procesado Contextual con IA (DeepSeek & Gemini)
-- **Deportes y Ruedas de Prensa**: Corrige nombres propios capturados erróneamente (ejemplo: `"Dego"` ➔ `Deco`, `"Frankie de Jong"` ➔ `Frenkie de Jong`, `"Vermin"` ➔ `Fermín López`).
+### 3. Post-Procesado Contextual con IA (DeepSeek & Gemini)
+- **Deportes y Ruedas de Prensa**: Corrige nombres propios capturados erróneamente (ejemplo: `"Dego"` -> `Deco`, `"Frankie de Jong"` -> `Frenkie de Jong`, `"Vermin"` -> `Fermín López`).
 - **Clases Universitarias e Idiomas**: Respeta intacto el vocabulario objeto de estudio y corrige falsos amigos fonéticos.
 - **Inmutabilidad Temporal**: Ninguna corrección semántica altera los códigos de tiempo, garantizando **cero desincronización audiovisual**.
 
-### ⚡ 4. App Nativa Windows con WebView2 (Sin Electron)
+### 4. App Nativa Windows con WebView2 (Sin Electron)
 - Desarrollada con Python y Microsoft Edge WebView2 nativo de Windows.
 - Se abre en **menos de 1.2 segundos** y consume **< 180MB de RAM**.
 
 ---
 
-## 📊 Benchmarks y Velocidad (Real-Time Factor - RTF)
+## Benchmarks y Velocidad (Real-Time Factor - RTF)
 
 Medición real con un audio de **60 minutos de máxima dificultad** (retransmisión de un partido de la Premier League con ruido de estadio ambiente, cánticos, locución rápida y menciones bilingües):
 
@@ -164,7 +164,7 @@ $$\text{Real-Time Factor (RTF)} = \frac{\text{Duración del Audio}}{\text{Tiempo
 
 ---
 
-## 💻 Prueba del Núcleo Algorítmico en Local
+## Prueba del Núcleo Algorítmico en Local
 
 Para probar de inmediato el limpiador de alucinaciones y el particionador de subtítulos sin necesidad de claves de API ni hardware de gráficos:
 
@@ -180,15 +180,25 @@ python -m venv venv
 .\venv\Scripts\activate
 ```
 
-### 3. Ejecutar la demo algorítmica
+### 3. Instalar dependencias
+```powershell
+pip install -r requirements.txt
+```
+
+### 4. Ejecutar la demo algorítmica
 ```powershell
 python quickstart_demo.py
 ```
 Este script ejecuta el test de referencia, limpia un texto con bucles patológicos de Whisper, muestra el particionado para TikTok, YouTube y Cine sin palabras huérfanas, y genera un archivo `.srt` de muestra al instante.
 
+### 5. Ejecutar tests unitarios con pytest
+```powershell
+pytest test_quickstart.py
+```
+
 ---
 
-## 📦 Instalador para Windows en 1 Clic
+## Instalador para Windows
 
 Si buscas la herramienta de escritorio completa con interfaz gráfica:
 
@@ -199,35 +209,35 @@ Si buscas la herramienta de escritorio completa con interfaz gráfica:
 
 ---
 
-## 🎓 Proyecto de Máster y Portafolio Universitario
+## Proyecto de Máster y Portafolio Universitario
 
 EchoScribe ha sido desarrollado bajo estrictos estándares de ingeniería de software y computación aplicada, siendo un proyecto ideal para presentar como **Trabajo de Fin de Máster (TFM)** en Inteligencia Artificial o Sistemas Distribuidos.
 
 Para docentes, tribunales universitarios y reclutadores técnicos:
-- 📖 [**docs/MASTER_THESIS_SHOWCASE.md**](docs/MASTER_THESIS_SHOWCASE.md): Memoria académica formal con formulaciones teóricas y guion de defensa oral de 15 minutos.
-- 🏗️ [**docs/ARCHITECTURE.md**](docs/ARCHITECTURE.md): Documento técnico de diseño del sistema por capas.
-- 📊 [**docs/BENCHMARKS.md**](docs/BENCHMARKS.md): Informe con mediciones empíricas de WER, latencias y costes de tokens.
+- [**docs/MASTER_THESIS_SHOWCASE.md**](docs/MASTER_THESIS_SHOWCASE.md): Memoria académica formal con formulaciones teóricas y guion de defensa oral de 15 minutos.
+- [**docs/ARCHITECTURE.md**](docs/ARCHITECTURE.md): Documento técnico de diseño del sistema por capas.
+- [**docs/BENCHMARKS.md**](docs/BENCHMARKS.md): Informe con mediciones empíricas de WER, latencias y costes de tokens.
 
 ---
 
-## 🌍 Guías Prácticas en la Web Oficial
+## Guías Prácticas en la Web Oficial
 
-- 🌐 [Página Web Oficial](https://www.echoscribe.es/)
-- ⚖️ [Alternativa a TurboScribe en Local y Nube](https://www.echoscribe.es/guias/alternativa-turboscribe-local)
-- ⚽ [Transcripción de Partidos de Fútbol y Ruedas de Prensa](https://www.echoscribe.es/guias/transcribir-partidos-futbol)
-- 🎓 [Entrevistas de TFG, Tesis y Clases Universitarias](https://www.echoscribe.es/guias/transcribir-entrevistas-tfg)
-- 🎬 [Generador de Capítulos y Subtítulos para YouTube](https://www.echoscribe.es/guias/capitulos-youtube-automaticos)
-- 🎙️ [Cómo Convertir Podcasts en Artículos de Blog con SEO](https://www.echoscribe.es/guias/convertir-podcast-en-blog)
+- [Página Web Oficial](https://www.echoscribe.es/)
+- [Alternativa a TurboScribe en Local y Nube](https://www.echoscribe.es/guias/alternativa-turboscribe-local)
+- [Transcripción de Partidos de Fútbol y Ruedas de Prensa](https://www.echoscribe.es/guias/transcribir-partidos-futbol)
+- [Entrevistas de TFG, Tesis y Clases Universitarias](https://www.echoscribe.es/guias/transcribir-entrevistas-tfg)
+- [Generador de Capítulos y Subtítulos para YouTube](https://www.echoscribe.es/guias/capitulos-youtube-automaticos)
+- [Cómo Convertir Podcasts en Artículos de Blog con SEO](https://www.echoscribe.es/guias/convertir-podcast-en-blog)
 
 ---
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Las contribuciones y propuestas de mejora son bienvenidas. Consulta [CONTRIBUTING.md](CONTRIBUTING.md) antes de enviar un Pull Request.
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Distribuido bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
 

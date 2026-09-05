@@ -1,27 +1,27 @@
-# 🚀 GitHub Launch & Community Strategy Guide (Anti-Ban Playbook)
+# GitHub Launch & Community Strategy Guide (Anti-Ban Playbook)
 ## *Estrategia Realista de Lanzamiento, Distribución en Comunidades y Posicionamiento SEO*
 
 > **Filosofía del Desarrollador:** La comunidad técnica en Reddit y Hacker News premia la honestidad radical, el valor técnico real y la humildad de un creador independiente (*indie hacker*). Castiga fulminantemente el spam corporativo, las promesas infladas de marketing y el *open-washing*.
 
 ---
 
-## ⚠️ 1. Las 3 Trampas Fatales que Debes Evitar
+## 1. Las 3 Trampas Fatales que Debes Evitar
 
-### ❌ Trampa 1: El Baneo Inmediato en `r/MachineLearning`
+### Trampa 1: El Baneo Inmediato en `r/MachineLearning`
 - **Por qué te banearían:** `r/MachineLearning` tiene una política estricta de admisión exclusiva para **papers científicos y avances teóricos en arquitecturas de ML**. Prohíben terminantemente aplicaciones de escritorio para el usuario final, wrappers comerciales de APIs o anuncios de productos.
 - **La regla de oro:** **NUNCA** publiques EchoScribe en `r/MachineLearning`.
 
-### ❌ Trampa 2: El "Open-Washing" (Lavado de Código Abierto)
+### Trampa 2: El "Open-Washing" (Lavado de Código Abierto)
 - **Por qué te freirían a negativos:** Si titulas un post como *"Open-Source Speech-to-Text Alternative"* y un desarrollador entra al repo y ve que la app de escritorio completa es freemium/propietaria y en el repo solo está el script del particionador (`quickstart_demo.py`), te acusarán de fraude (*bait-and-switch*).
 - **La solución honesta:** Explica con transparencia:
   > *"He liberado en código abierto el script con el algoritmo de particionado de subtítulos sin huérfanas y el limpiador de bucles (`quickstart_demo.py`). Para quienes quieran la herramienta completa lista para usar en Windows con WebView2, he compilado un instalador en Releases."*
 
-### ❌ Trampa 3: La Ilusión del "Top 3 en Google en 48 Horas"
+### Trampa 3: La Ilusión del "Top 3 en Google en 48 Horas"
 - **La realidad del SEO:** GitHub tiene una gran autoridad de dominio (`DA ~96`), lo que facilita que Google **rastree e indexe** el repositorio en pocos días. Sin embargo, posicionarse en los primeros resultados para términos competitivos (*"Whisper Windows"*, *"Fast Whisper Ingestion"*) requiere **semanas o meses** de retención, enlaces entrantes (*backlinks*) y actividad continuada. No te frustres si no apareces en la primera página el martes; el SEO es una carrera de fondo.
 
 ---
 
-## 🎯 2. Dónde SÍ Publicar (Comunidades Receptivas)
+## 2. Dónde SÍ Publicar (Comunidades Receptivas)
 
 | Comunidad | Audiencia Objetivo | Enfoque Adecuado |
 | :--- | :--- | :--- |
@@ -33,7 +33,7 @@
 
 ---
 
-## 📝 3. Plantillas de Copys Honestos y de Alta Conversión
+## 3. Plantillas de Copys Honestos y de Alta Conversión
 
 ### 3.1. Para `r/SideProject` (Tono: Creador Independiente)
 
@@ -123,28 +123,28 @@ Feedback on the dynamic programming merge logic or alternative heuristic approac
 ### 3.4. Para LinkedIn (Tono: Profesional, Académico y Portafolio)
 
 ```text
-🎙️ Presento EchoScribe: Ingeniería de Voz a Texto de Alto Rendimiento con Whisper, GPUs Serverless y Modelos de Lenguaje Contextuales.
+Presento EchoScribe: Ingeniería de Voz a Texto de Alto Rendimiento con Whisper, GPUs Serverless y Modelos de Lenguaje Contextuales.
 
 En el desarrollo de aplicaciones basadas en ASR (Automatic Speech Recognition), existen dos retos que los modelos acústicos en bruto no resuelven por sí solos:
 1. Los bucles de alucinación periódica en tramos de silencio o ruido ambiente denso.
 2. La falta de ergonomía en la partición de subtítulos, que rompe unidades sintácticas y genera palabras huérfanas.
 
 Para abordar esto como proyecto de ingeniería y trabajo de investigación de máster, he desarrollado EchoScribe:
-✅ Inferencia híbrida: Modo Local 100% privado en CPU/GPU y Modo Turbo Nube en GPUs NVIDIA L4 (24GB VRAM) a 140x RTF (~25 s por hora de audio) con fallback automático a CPU local.
-✅ Cortafuegos de 4 etapas contra bucles de repetición.
-✅ Particionado semántico elástico conforme a normas de subtitulado BBC/Netflix (perfiles específicos para TikTok, YouTube y Cine).
-✅ Cascada de traducción con DeepSeek Neural y corrección contextual con Google Gemini (3.5 Flash Lite, 3.6 Flash y 3.8 Flash) con bloqueo absoluto de códigos de tiempo.
+[+] Inferencia híbrida: Modo Local 100% privado en CPU/GPU y Modo Turbo Nube en GPUs NVIDIA L4 (24GB VRAM) a 140x RTF (~25 s por hora de audio) con fallback automático a CPU local.
+[+] Cortafuegos de 4 etapas contra bucles de repetición.
+[+] Particionado semántico elástico conforme a normas de subtitulado BBC/Netflix (perfiles específicos para TikTok, YouTube y Cine).
+[+] Cascada de traducción con DeepSeek Neural y corrección contextual con Google Gemini (3.5 Flash Lite, 3.6 Flash y 3.8 Flash) con bloqueo absoluto de códigos de tiempo.
 
 He publicado el repositorio técnico con la memoria académica para máster, benchmarks y el script algorítmico en abierto:
-👉 Repositorio GitHub: https://github.com/ivangarmir18/EchoScribe
-👉 Web oficial e instalador para Windows: https://www.echoscribe.es
+-> Repositorio GitHub: https://github.com/ivangarmir18/EchoScribe
+-> Web oficial e instalador para Windows: https://www.echoscribe.es
 
 #InteligenciaArtificial #MachineLearning #Python #Whisper #NLP #DesarrolloSoftware #OpenSource #DeepLearning
 ```
 
 ---
 
-## 💻 4. Guía Paso a Paso de Comandos Git y GitHub
+## 4. Guía Paso a Paso de Comandos Git y GitHub
 
 Sigue estos pasos exactos desde la consola para subir la carpeta a tu GitHub:
 
@@ -192,16 +192,16 @@ git push -u origin main
 En la página principal de tu repositorio en GitHub, pulsa en el engranaje de configuración junto a **About** (arriba a la derecha) e introduce:
 - **Website:** `https://www.echoscribe.es`
 - **Topics:**
-  ```text
-  whisper, speech-to-text, srt, subtitles, faster-whisper, windows-desktop,
-  transcription, audio-to-text, modal-gpu, gemini, ai-subtitles, youtube-transcriber,
-  subtitles-generator, nlp, python3, webview2, vtt, deepseek, audio-processing,
-  turboscribe-alternative
-  ```
+   ```text
+   whisper, speech-to-text, srt, subtitles, faster-whisper, windows-desktop,
+   transcription, audio-to-text, modal-gpu, gemini, ai-subtitles, youtube-transcriber,
+   subtitles-generator, nlp, python3, webview2, vtt, deepseek, audio-processing,
+   turboscribe-alternative
+   ```
 
 ---
 
-## 📈 5. Medición de Resultados y Seguimiento
+## 5. Medición de Resultados y Seguimiento
 
 1. **Google Search Console:** Entra en tu panel de Google Search Console para `echoscribe.es`. Con la herramienta de Inspección de URLs, solicita la indexación de las guías enlazadas en el README.
 2. **Tráfico de Referencia:** En Google Analytics, monitoriza el tráfico procedente de `github.com` y `reddit.com`.

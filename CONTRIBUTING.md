@@ -1,10 +1,10 @@
-# 🤝 Contributing to EchoScribe
+# Contributing to EchoScribe
 
-We love contributions! Whether you want to improve subtitle ergonomics, benchmark new GPU backends, fix a bug, or enhance documentation, your help is warmly welcomed.
+We welcome contributions. Whether you want to improve subtitle ergonomics, benchmark new GPU backends, fix a bug, or enhance documentation, your help is appreciated.
 
 ---
 
-## 🧭 How to Get Started
+## How to Get Started
 
 1. **Fork the Repository:** Click the "Fork" button at the top right of this repository.
 2. **Clone your Fork:**
@@ -18,15 +18,15 @@ We love contributions! Whether you want to improve subtitle ergonomics, benchmar
    .\venv\Scripts\activate
    pip install -r requirements.txt
    ```
-4. **Run the Test Suite / Algorithmic Demo:**
+4. **Run the Test Suite & Algorithmic Demo:**
    ```powershell
    python quickstart_demo.py
-   pytest
+   pytest test_quickstart.py
    ```
 
 ---
 
-## 🛠️ Code Style & Guidelines
+## Code Style & Guidelines
 
 - **PEP 8 Compliance:** Keep Python code formatted and clean.
 - **Timestamp Integrity:** Never modify subtitle timing calculations without verifying against multi-frame alignment tests.
@@ -35,7 +35,7 @@ We love contributions! Whether you want to improve subtitle ergonomics, benchmar
 
 ---
 
-## 📬 Submitting a Pull Request
+## Submitting a Pull Request
 
 1. Create a dedicated feature branch:
    ```bash
@@ -53,11 +53,10 @@ We love contributions! Whether you want to improve subtitle ergonomics, benchmar
 
 ---
 
-## 🌟 Found a Bug or Have an Idea?
+## Issues & Feature Requests
 
 Please open an issue using one of our GitHub templates:
 - [Bug Report](.github/ISSUE_TEMPLATE/bug_report.md)
 - [Feature Request](.github/ISSUE_TEMPLATE/feature_request.md)
 
 For commercial or sponsorship queries, visit our official website: [https://www.echoscribe.es](https://www.echoscribe.es).
-

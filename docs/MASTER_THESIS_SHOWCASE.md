@@ -1,4 +1,4 @@
-# 🎓 EchoScribe: Academic Master's Thesis & Research Showcase
+# EchoScribe: Academic Master's Thesis & Research Showcase
 ## *Memoria Técnica y Presentación Académica para Tribunal Evaluador y Docentes*
 
 > **Título del Proyecto:** *EchoScribe: Arquitectura Híbrida de Ingesta Fonética y Transcripción Automática con Mitigación de Alucinaciones y Optimización Ergonómica de Subtítulos Mediante Modelos de Lenguaje Contextuales.*  
