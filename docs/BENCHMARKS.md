@@ -20,7 +20,7 @@ This report establishes empirical performance baselines for EchoScribe across fo
 | Dataset ID | Description | Duration | Acoustic Profile | Languages |
 | :--- | :--- | :--- | :--- | :--- |
 | **DS-SPORTS-01** | Premier League match live commentary (`benchmark_partido_premier.py`) | 60 min 00 s | Heavy ambient crowd roar, fast narration, overlapping commentary, stadium PA announcements | Spanish / English |
-| **DS-ACAD-02** | Master's degree university lecture on distributed algorithms | 45 min 30 s | Echoey auditorium reverberation, technical jargon, Q&A from remote students | Spanish |
+| **DS-TECH-02** | Technical university lecture on distributed algorithms | 45 min 30 s | Echoey auditorium reverberation, technical jargon, Q&A from remote students | Spanish |
 | **DS-POD-03** | Multi-speaker tech podcast | 32 min 15 s | High fidelity studio audio, rapid conversational interruptions, code-switching | English / Spanish |
 
 ---

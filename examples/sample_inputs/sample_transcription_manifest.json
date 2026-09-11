@@ -1,6 +1,6 @@
 {
   "project_name": "EchoScribe Demonstration Dataset",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "engine_configuration": {
     "engine": "modal_cloud_turbo",
     "whisper_model": "large-v3-turbo",

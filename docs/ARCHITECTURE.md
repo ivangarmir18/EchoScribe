@@ -1,9 +1,9 @@
 # EchoScribe Architecture & Technical Whitepaper
 
-> **Document Version:** 1.3.2  
+> **Document Version:** 1.3.3  
 > **Author:** Iván García Miranda  
 > **Hardware Target:** Serverless NVIDIA L4 (24GB VRAM, Ada Lovelace) & Windows 10/11 Native Edge WebView2  
-> **Target Audience:** Systems Architects, Machine Learning Engineers, Academic Evaluators & Open-Source Contributors
+> **Target Audience:** Systems Architects, Machine Learning Engineers, Developers & Open-Source Contributors
 
 ---
 
