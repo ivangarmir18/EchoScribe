@@ -1,95 +1,95 @@
-ï»¿<div align="center">
+<div align="center">
 
-# EchoScribe AI Studio (EspaÃ±ol)
+# EchoScribe AI Studio (Español)
 
-### **Estudio Integral de TranscripciÃ³n por Voz y GeneraciÃ³n de Contenido para Windows**
-*TranscripciÃ³n rÃ¡pida con Whisper en la nube GPU, generaciÃ³n de titulares y resÃºmenes con IA, descarga directa de medios (MP3/MP4) y formateo inteligente de subtÃ­tulos para CapCut, Premiere y DaVinci.*
+### **Estudio Integral de Transcripción por Voz y Generación de Contenido para Windows**
+*Transcripción rápida con Whisper en la nube GPU, generación de titulares y resúmenes con IA, descarga directa de medios (MP3/MP4) y formateo inteligente de subtítulos para CapCut, Premiere y DaVinci.*
 
 [![Web Oficial](https://img.shields.io/badge/Web_Oficial-echoscribe.es-6366f1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.echoscribe.es)
-[![Descargar Instalador](https://img.shields.io/badge/Descargar_Instalador-v1.3.3-10b981?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/ivangarmir18/EchoScribe/releases)
+[![Descargar Instalador](https://img.shields.io/badge/Descargar_Instalador-v1.4.0-10b981?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/ivangarmir18/EchoScribe/releases)
 [![Informe VirusTotal](https://img.shields.io/badge/VirusTotal-Verificado_Limpio-brightgreen?style=for-the-badge&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/file/ec0517c1cc365f2dfb43d8715e7aaaa3b8cf6583c63ef8b121f6107fc163f55d/detection)
 [![GitHub release](https://img.shields.io/github/v/release/ivangarmir18/EchoScribe?style=for-the-badge&color=blue)](https://github.com/ivangarmir18/EchoScribe/releases)
 [![Licencia: MIT](https://img.shields.io/badge/Licencia-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 <br/>
 
-**[English](README.md)** â€¢ **[EspaÃ±ol](README_ES.md)** â€¢ **[Arquitectura TÃ©cnica](docs/ARCHITECTURE.md)** â€¢ **[Benchmarks](docs/BENCHMARKS.md)** â€¢ **[Descargar Instalador](https://github.com/ivangarmir18/EchoScribe/releases)**
+**[English](README.md)** • **[Español](README_ES.md)** • **[Arquitectura Técnica](docs/ARCHITECTURE.md)** • **[Benchmarks](docs/BENCHMARKS.md)** • **[Descargar Instalador](https://github.com/ivangarmir18/EchoScribe/releases)**
 
 <br/>
 
-> **"Convierte cualquier audio, vÃ­deo o enlace de streaming en transcripciones exactas, resÃºmenes con IA y subtÃ­tulos sincronizados para tus vÃ­deos en cuestiÃ³n de segundos."**
+> **"Convierte cualquier audio, vídeo o enlace de streaming en transcripciones exactas, resúmenes con IA y subtítulos sincronizados para tus vídeos en cuestión de segundos."**
 
 </div>
 
 ---
 
-## GalerÃ­a de la AplicaciÃ³n
+## Galería de la Aplicación
 
 <div align="center">
 
 ### Panel Principal de EchoScribe AI Studio
 ![Panel Principal de EchoScribe AI Studio](docs/img/1.png)
-*Interfaz de escritorio moderna con ingesta de enlaces, selector de idioma, transcripciÃ³n rÃ¡pida con IA y descarga directa.*
+*Interfaz de escritorio moderna con ingesta de enlaces, selector de idioma, transcripción rápida con IA y descarga directa.*
 
 <br/>
 
-| Recortador de Audio Interactivo | Ajustes y Perfiles de SubtÃ­tulos | Centro de ExportaciÃ³n Multiformato |
+| Recortador de Audio Interactivo | Ajustes y Perfiles de Subtítulos | Centro de Exportación Multiformato |
 | :---: | :---: | :---: |
-| ![Recortador de Audio](docs/img/2.png) | ![Ajustes de SubtÃ­tulos](docs/img/3.png) | ![Modal de ExportaciÃ³n](docs/img/4.png) |
-| *Selector de intervalo visual (0-30 min, atajo 1er minuto)* | *Perfiles ergonÃ³micos (TikTok/Reels, YouTube, Cine)* | *ExportaciÃ³n en 1 clic a TXT, Word, PDF, Markdown y SRT* |
+| ![Recortador de Audio](docs/img/2.png) | ![Ajustes de Subtítulos](docs/img/3.png) | ![Modal de Exportación](docs/img/4.png) |
+| *Selector de intervalo visual (0-30 min, atajo 1er minuto)* | *Perfiles ergonómicos (TikTok/Reels, YouTube, Cine)* | *Exportación en 1 clic a TXT, Word, PDF, Markdown y SRT* |
 
 </div>
 
 ---
 
-## Â¿QuÃ© es EchoScribe AI Studio?
+## ¿Qué es EchoScribe AI Studio?
 
-**EchoScribe AI Studio** es una aplicaciÃ³n de escritorio nativa para Windows pensada para creadores de contenido, editores de vÃ­deo, periodistas, estudiantes y profesionales que necesitan transcripciones rÃ¡pidas y precisas sin pelearse con scripts de Python, drivers de CUDA ni webs lentas con suscripciones abusivas.
+**EchoScribe AI Studio** es una aplicación de escritorio nativa para Windows pensada para creadores de contenido, editores de vídeo, periodistas, estudiantes y profesionales que necesitan transcripciones rápidas y precisas sin pelearse con scripts de Python, drivers de CUDA ni webs lentas con suscripciones abusivas.
 
-### Â¿QuÃ© hace Ãºnica a la aplicaciÃ³n?
+### ¿Qué hace única a la aplicación?
 
 1. **Ingesta Universal y Descargador de Medios**:
    - Pega enlaces directos de **YouTube, X (Twitter) o Twitch**, o arrastra archivos locales (**MP3, MP4, WAV, MKV, M4A, FLAC**).
-   - Botones dedicados de descarga directa para obtener el audio en **MP3** o el vÃ­deo en **MP4** con un solo clic.
+   - Botones dedicados de descarga directa para obtener el audio en **MP3** o el vídeo en **MP4** con un solo clic.
 
 2. **Recortador de Audio Interactivo (Trimmer)**:
-   - Barra visual de rango para transcribir Ãºnicamente el fragmento que necesitas (por ejemplo, el primer minuto o un intervalo especÃ­fico de tiempo), ahorrando minutos de tu plan.
+   - Barra visual de rango para transcribir únicamente el fragmento que necesitas (por ejemplo, el primer minuto o un intervalo específico de tiempo), ahorrando minutos de tu plan.
 
 3. **Dos Modos de Procesamiento**:
-   - **âš¡ TranscripciÃ³n RÃ¡pida (~50â€“70s)**: Inferencia directa con Whisper Ultra en clÃºster GPU en la nube para obtener el texto literal al instante.
-   - **âš¡ Transcribir + AnÃ¡lisis IA (~80â€“120s)**: TranscripciÃ³n fonÃ©tica combinada con bÃºsqueda contextual para generar automÃ¡ticamente **Titulares** y un **Resumen Ejecutivo** estructurado.
+   - **? Transcripción Rápida (~50–70s)**: Inferencia directa con Whisper Ultra en clúster GPU en la nube para obtener el texto literal al instante.
+   - **? Transcribir + Análisis IA (~80–120s)**: Transcripción fonética combinada con búsqueda contextual para generar automáticamente **Titulares** y un **Resumen Ejecutivo** estructurado.
 
-4. **SubtÃ­tulos Inteligentes para Premiere, CapCut y DaVinci (.SRT)**:
-   - Ajuste de longitud de subtÃ­tulo segÃºn la plataforma de destino:
-     - **Corto (15â€“26 car.)**: Pensado para TikTok, Instagram Reels y YouTube Shorts.
-     - **Medio (27â€“40 car.)**: Cadencia natural para vÃ­deos estÃ¡ndar de YouTube y divulgaciÃ³n.
-     - **Largo (41â€“55 car.)**: EstÃ¡ndar para cine, entrevistas y documentales.
-   - Algoritmo que evita lÃ­neas huÃ©rfanas y cortes antiestÃ©ticos en mitad de palabras clave.
+4. **Subtítulos Inteligentes para Premiere, CapCut y DaVinci (.SRT)**:
+   - Ajuste de longitud de subtítulo según la plataforma de destino:
+     - **Corto (15–26 car.)**: Pensado para TikTok, Instagram Reels y YouTube Shorts.
+     - **Medio (27–40 car.)**: Cadencia natural para vídeos estándar de YouTube y divulgación.
+     - **Largo (41–55 car.)**: Estándar para cine, entrevistas y documentales.
+   - Algoritmo que evita líneas huérfanas y cortes antiestéticos en mitad de palabras clave.
 
-5. **ExportaciÃ³n Multiformato en 1 Clic**:
+5. **Exportación Multiformato en 1 Clic**:
    - **Texto Plano (.TXT)**: Ligero y universal.
-   - **Documento Word (.DOC)**: Maquetado con tÃ­tulos y estilos para Microsoft Word.
+   - **Documento Word (.DOC)**: Maquetado con títulos y estilos para Microsoft Word.
    - **Documento PDF (.PDF)**: Paginado y listo para imprimir o enviar.
-   - **Markdown (.MD)**: Formato Ã³ptimo para Notion, Obsidian o blogs tÃ©cnicos.
-   - **SubtÃ­tulos (.SRT)**: Bloques sincronizados listos para soltar en la lÃ­nea de tiempo de tu editor de vÃ­deo.
+   - **Markdown (.MD)**: Formato óptimo para Notion, Obsidian o blogs técnicos.
+   - **Subtítulos (.SRT)**: Bloques sincronizados listos para soltar en la línea de tiempo de tu editor de vídeo.
 
 6. **Experiencia Nativa en Windows**:
    - Desarrollado sobre Microsoft Edge WebView2 (Chromium nativo).
-   - Inicio ultrarrÃ¡pido (< 1.2s), mÃ­nimo consumo de memoria RAM (< 180MB), tema oscuro/claro y control de escala/zoom (90%, 100%, 112%).
+   - Inicio ultrarrápido (< 1.2s), mínimo consumo de memoria RAM (< 180MB), tema oscuro/claro y control de escala/zoom (90%, 100%, 112%).
 
 ---
 
-## Estructura del Repositorio: CÃ³digo AlgorÃ­tmico + Releases
+## Estructura del Repositorio: Código Algorítmico + Releases
 
 Este repositorio cumple dos funciones claras:
-1. **NÃºcleo AlgorÃ­tmico Open-Source (`quickstart_demo.py`)**: Contiene el cÃ³digo fuente en Python de los algoritmos clave de EchoScribe: el limpiador de bucles de alucinaciÃ³n de Whisper y el particionador semÃ¡ntico de subtÃ­tulos sin palabras huÃ©rfanas. Cualquiera puede probarlo o integrarlo en sus proyectos.
-2. **DistribuciÃ³n de la AplicaciÃ³n de Escritorio**: Punto de encuentro oficial para el instalador compilado de Windows (`EchoScribe_Setup.exe`), notas de versiÃ³n, auditorÃ­a de seguridad en VirusTotal y documentaciÃ³n tÃ©cnica de la arquitectura.
+1. **Núcleo Algorítmico Open-Source (`quickstart_demo.py`)**: Contiene el código fuente en Python de los algoritmos clave de EchoScribe: el limpiador de bucles de alucinación de Whisper y el particionador semántico de subtítulos sin palabras huérfanas. Cualquiera puede probarlo o integrarlo en sus proyectos.
+2. **Distribución de la Aplicación de Escritorio**: Punto de encuentro oficial para el instalador compilado de Windows (`EchoScribe_Setup.exe`), notas de versión, auditoría de seguridad en VirusTotal y documentación técnica de la arquitectura.
 
 ---
 
-## CÃ³mo Probar la Demo AlgorÃ­tmica en Local
+## Cómo Probar la Demo Algorítmica en Local
 
-Puedes probar el nÃºcleo algorÃ­tmico en tu mÃ¡quina en menos de un minuto sin configurar GPUs ni claves API:
+Puedes probar el núcleo algorítmico en tu máquina en menos de un minuto sin configurar GPUs ni claves API:
 
 ```bash
 # 1. Clonar el repositorio
@@ -99,31 +99,31 @@ cd EchoScribe
 # 2. Ejecutar la demo
 python quickstart_demo.py
 
-# 3. Ejecutar los tests automÃ¡ticos
+# 3. Ejecutar los tests automáticos
 python -m pytest test_quickstart.py
 ```
 
 ---
 
-## Descarga e InstalaciÃ³n en Windows
+## Descarga e Instalación en Windows
 
-Para utilizar la aplicaciÃ³n completa con interfaz grÃ¡fica:
+Para utilizar la aplicación completa con interfaz gráfica:
 
-1. Descarga el instalador **`EchoScribe_Setup.exe` (v1.3.3)** desde [**echoscribe.es**](https://www.echoscribe.es) o desde [**Releases de GitHub**](https://github.com/ivangarmir18/EchoScribe/releases).
+1. Descarga el instalador **`EchoScribe_Setup.exe` (v1.4.0)** desde [**echoscribe.es**](https://www.echoscribe.es) o desde [**Releases de GitHub**](https://github.com/ivangarmir18/EchoScribe/releases).
 2. Comprueba el [**Informe de Seguridad en VirusTotal**](https://www.virustotal.com/gui/file/ec0517c1cc365f2dfb43d8715e7aaaa3b8cf6583c63ef8b121f6107fc163f55d/detection).
-3. Ejecuta el instalador. AÃ±adirÃ¡ un acceso directo en tu escritorio y un desinstalador limpio en el panel de control.
+3. Ejecuta el instalador. Añadirá un acceso directo en tu escritorio y un desinstalador limpio en el panel de control.
 
 ---
 
-## DocumentaciÃ³n TÃ©cnica
+## Documentación Técnica
 
-- [**docs/ARCHITECTURE.md**](docs/ARCHITECTURE.md): Diagramas de flujo de datos, gestor de descargas yt-dlp y diseÃ±o de infraestructura GPU.
-- [**docs/BENCHMARKS.md**](docs/BENCHMARKS.md): Pruebas de velocidad, factores de tiempo real (RTF) y tasa de error fonÃ©tico.
+- [**docs/ARCHITECTURE.md**](docs/ARCHITECTURE.md): Diagramas de flujo de datos, gestor de descargas yt-dlp y diseño de infraestructura GPU.
+- [**docs/BENCHMARKS.md**](docs/BENCHMARKS.md): Pruebas de velocidad, factores de tiempo real (RTF) y tasa de error fonético.
 
 ---
 
 ## Licencia
 
-Distribuido bajo la Licencia MIT. Consulta [LICENSE](LICENSE) para mÃ¡s detalles.
+Distribuido bajo la Licencia MIT. Consulta [LICENSE](LICENSE) para más detalles.
 
-Desarrollado por [IvÃ¡n GarcÃ­a Miranda](https://www.echoscribe.es/sobre-mi).
+Desarrollado por [Iván García Miranda](https://www.echoscribe.es/sobre-mi).

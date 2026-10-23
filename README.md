@@ -1,4 +1,4 @@
-ï»¿<div align="center">
+<div align="center">
 
 # EchoScribe AI Studio
 
@@ -6,14 +6,14 @@
 *High-speed Whisper cloud transcription, AI-powered summaries & headlines, direct media downloader (MP3/MP4), and smart subtitle formatting for CapCut, Premiere & DaVinci.*
 
 [![Official Website](https://img.shields.io/badge/Official_Website-echoscribe.es-6366f1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.echoscribe.es)
-[![Download Latest Release](https://img.shields.io/badge/Download_Installer-v1.3.3-10b981?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/ivangarmir18/EchoScribe/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download_Installer-v1.4.0-10b981?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/ivangarmir18/EchoScribe/releases)
 [![VirusTotal Report](https://img.shields.io/badge/VirusTotal-Verified_Clean-brightgreen?style=for-the-badge&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/file/ec0517c1cc365f2dfb43d8715e7aaaa3b8cf6583c63ef8b121f6107fc163f55d/detection)
 [![GitHub release](https://img.shields.io/github/v/release/ivangarmir18/EchoScribe?style=for-the-badge&color=blue)](https://github.com/ivangarmir18/EchoScribe/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 <br/>
 
-**[English](README.md)** â€¢ **[EspaÃ±ol](README_ES.md)** â€¢ **[Technical Architecture](docs/ARCHITECTURE.md)** â€¢ **[Benchmarks](docs/BENCHMARKS.md)** â€¢ **[Download Installer](https://github.com/ivangarmir18/EchoScribe/releases)**
+**[English](README.md)** • **[Español](README_ES.md)** • **[Technical Architecture](docs/ARCHITECTURE.md)** • **[Benchmarks](docs/BENCHMARKS.md)** • **[Download Installer](https://github.com/ivangarmir18/EchoScribe/releases)**
 
 <br/>
 
@@ -56,14 +56,14 @@
    - Visual slider to transcribe only the exact fragment you need (e.g. first 60 seconds, custom timecodes), saving cloud time and tokens.
 
 3. **Two Tailored Processing Modes**:
-   - **âš¡ Quick Transcription (~50â€“70s)**: High-speed Whisper Ultra on cloud GPU for immediate verbatim text.
-   - **âš¡ Transcribe + AI Analysis (~80â€“120s)**: Full acoustic transcription combined with Google Search grounding to automatically generate **Headlines (Titulares)** and **Executive Summaries (Resumen)**.
+   - **? Quick Transcription (~50–70s)**: High-speed Whisper Ultra on cloud GPU for immediate verbatim text.
+   - **? Transcribe + AI Analysis (~80–120s)**: Full acoustic transcription combined with Google Search grounding to automatically generate **Headlines (Titulares)** and **Executive Summaries (Resumen)**.
 
 4. **Smart Subtitle Generation (CapCut, Premiere & DaVinci Ready)**:
    - Configurable subtitle density presets:
-     - **Short (15â€“26 chars)**: Optimized for TikTok, Instagram Reels, and YouTube Shorts.
-     - **Medium (27â€“40 chars)**: Standard cadence for YouTube and web video essays.
-     - **Long (41â€“55 chars)**: Cinema, interviews, and documentary broadcast standards.
+     - **Short (15–26 chars)**: Optimized for TikTok, Instagram Reels, and YouTube Shorts.
+     - **Medium (27–40 chars)**: Standard cadence for YouTube and web video essays.
+     - **Long (41–55 chars)**: Cinema, interviews, and documentary broadcast standards.
    - Eliminates awkward orphan words and broken phrases.
 
 5. **Multi-Format 1-Click Export**:
@@ -109,7 +109,7 @@ python -m pytest test_quickstart.py
 
 To install the complete **EchoScribe AI Studio** desktop application:
 
-1. Download **`EchoScribe_Setup.exe` (v1.3.3)** from [**echoscribe.es**](https://www.echoscribe.es) or from [**GitHub Releases**](https://github.com/ivangarmir18/EchoScribe/releases).
+1. Download **`EchoScribe_Setup.exe` (v1.4.0)** from [**echoscribe.es**](https://www.echoscribe.es) or from [**GitHub Releases**](https://github.com/ivangarmir18/EchoScribe/releases).
 2. Check the verified [**VirusTotal Clean Scan Report**](https://www.virustotal.com/gui/file/ec0517c1cc365f2dfb43d8715e7aaaa3b8cf6583c63ef8b121f6107fc163f55d/detection).
 3. Run the installer and launch EchoScribe from your desktop shortcut.
 
@@ -126,4 +126,4 @@ To install the complete **EchoScribe AI Studio** desktop application:
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more details.
 
-Created by [IvÃ¡n GarcÃ­a Miranda](https://www.echoscribe.es/sobre-mi).
+Created by [Iván García Miranda](https://www.echoscribe.es/sobre-mi).
